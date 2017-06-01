@@ -4,9 +4,11 @@
   "description": "an example implementation of a typescript app in node",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run tsc & npm run nodemon",
     "tsc": "tsc -w",
     "nodemon": "nodemon",
-    "start": "npm run tsc & npm run nodemon"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
