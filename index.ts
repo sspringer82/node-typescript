@@ -1,5 +1,12 @@
 import { Person } from './person';
 
-const basti = new Person('Basti', 'Springer');
+import * as express from 'express';
 
-console.log('Hello ' + basti.getFullName());
+const app: express.Application = express();
+
+app.get('/', (req: express.Request, res: express.Response) => {
+  const basti = new Person('Basti', 'Springer');
+  res.send('Hello ' + basti.getFullName());
+});
+
+app.listen(8080);
