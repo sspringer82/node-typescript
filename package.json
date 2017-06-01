@@ -4,7 +4,7 @@
   "description": "an example implementation of a typescript app in node",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -w index.ts",
+    "tsc": "tsc -w",
     "nodemon": "nodemon",
     "start": "npm run tsc & npm run nodemon"
   },
