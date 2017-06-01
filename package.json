@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sspringer82/node-typescript#readme",
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "typescript": "^2.3.4"
   }
 }
