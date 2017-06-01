@@ -9,4 +9,4 @@ app.get('/', (req: express.Request, res: express.Response) => {
   res.send('Hello ' + basti.getFullName());
 });
 
-app.listen(8080);
+app.listen(8080, () => console.log('listening to http://localhost:8080'));
